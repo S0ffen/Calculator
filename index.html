@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Kawiarnia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Javascript Calculator</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Centered nav only</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="centeredHero">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-3 py-5">
-                <div class="col-lg-6 firstCoffe" style="background-color:#E69040; height: 400px;">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Arabesque Sunrise</h1>
-                    <p class="lead">Nasza Arabesque Sunrise - to pełna życia kawa z nutą cytrusów i delikatnymi akcentami orzechów laskowych. Idealna na poranny zastrzyk energii.</p>
-                </div>
-                <div class="col-10 col-sm-8 col-lg-6" >
-                    <img src="Images/coffe2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                </div>
-            </div>
-        </div>
+  <div class="calculator">
+    <div class="display">
+      <div class="previouisNumber">\
+        <p>123</p>
+        <span class="mathSign">+</span>
+      </div>
+      <p class="currentNumber">12312</p>
+    </div>
+  <div class="panel">
+    <button class="clear">C</button>
+    <button class="operator">2^</button>
+    <button class="operator">:</button>
+    <button class="operator">x</button>
+    <button class="number">7</button>
+    <button class="number">8</button>
+    <button class="number">9</button>
+    <button class="operator">-</button>
+    <button class="number">4</button>
+    <button class="number">5</button>
+    <button class="number">6</button>
+    <button class="operator">+</button>
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number">3</button>
+    <button class="equals">=</button>
+    <button class="number">0</button>
+    <button class="number">00</button>
+    <button class="number">,</button>
+  </div>
 </div>
-    
-    
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+  <div class="calculator-history">
+    <p class="history-title">Last Calculations 
+      <button class="history-btn">Clear History</button></p>
+      <hr>
+
+      <ul class="history">
+  
+
+      </ul>
+  </div>
+
+
+
+
+  <script src="main.js"></script>
+</body>
 </html>
