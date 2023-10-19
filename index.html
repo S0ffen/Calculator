@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+
+
   <link rel="stylesheet" href="stylesheet.css">
   <title>Javascript Calculator</title>
 </head>
 <body>
   <div class="calculator">
     <div class="display">
-      <div class="previouisNumber">\
-        <p>123</p>
-        <span class="mathSign">+</span>
+      <div class="previousNumber">
+        <p></p>
+        <span class="mathSign"></span>
       </div>
-      <p class="currentNumber">12312</p>
+      <p class="currentNumber"></p>
     </div>
   <div class="panel">
     <button class="clear">C</button>
@@ -34,11 +39,11 @@
     <button class="equals">=</button>
     <button class="number">0</button>
     <button class="number">00</button>
-    <button class="number">,</button>
+    <button class="number">.</button>
   </div>
 </div>
 
-  <div class="calculator-history">
+  <div data-simplebar class="calculator-history">
     <p class="history-title">Last Calculations 
       <button class="history-btn">Clear History</button></p>
       <hr>
@@ -51,7 +56,7 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
