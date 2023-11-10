@@ -31,10 +31,11 @@ function displayNumbers () {
 
 }
 
+
+
 function operate () {
     if(currentNumber.innerHTML === '' && this.textContent === '-'){
-        currentNumber.innerHTML = '-';
-        return;
+    return;
     }
 
 
@@ -63,7 +64,7 @@ function showResult() {
         result = a + b;
         break;
         case '-':
-        result = b -a;
+        result = b - a;
         break;
         case 'x':
         result = a * b;
